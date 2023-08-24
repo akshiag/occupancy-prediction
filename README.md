@@ -63,11 +63,12 @@ Instructions:
 This app loads the model that serves predictions that predicts the occupancy of one or several 
 rooms for the next 24 hours based on this model trained in first part.
 
+
+Containering
+1) To dockerize the app
+   docker build -t prediction-app .
+   
 Running the app
-
-1) Load the docker image
-   docker load -i prediction-app.tar
-
 2) Run the image 
    docker run -p 5000:5000 prediction-app:latest
 
@@ -81,4 +82,4 @@ Running the app
     "device": ["device_1", "device_7"]   #devices
     }
 
-4) Output will be a Json response with next 24 hours predictions for each device in request
+5) Output will be a Json response with next 24 hours predictions for each device in request
