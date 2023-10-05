@@ -1,4 +1,4 @@
-# Interview challenge - wattx AI / ML candidates
+
 
 # 1) Occupancy prediction model
 
